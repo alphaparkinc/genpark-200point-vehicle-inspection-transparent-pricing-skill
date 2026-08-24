@@ -1,0 +1,38 @@
+{
+  "name": "genpark-200point-vehicle-inspection-transparent-pricing-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - 200-point transparent vehicle inspection report generator and fixed no-haggle used car pricing engine with 5-day money back guarantee.",
+  "author": "genpark",
+  "category": "automotive",
+  "tags": [
+    "used-cars",
+    "200-point-inspection",
+    "transparent-pricing",
+    "no-haggle",
+    "spinny"
+  ],
+  "inputs": {
+    "car_reg_number": {
+      "type": "string"
+    },
+    "odometer_reading_km": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "inspection_certificate_id": {
+      "type": "string"
+    },
+    "points_inspected": {
+      "type": "integer"
+    },
+    "fixed_no_haggle_price_inr": {
+      "type": "number"
+    },
+    "money_back_guarantee_days": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
